@@ -8,8 +8,12 @@
   border-radius: 4px;
 
   background-color: var(--dark-background-color);
-}
 
-.subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
+    width: 450px;
+  }
 }

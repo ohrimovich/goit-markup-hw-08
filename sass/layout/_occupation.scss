@@ -1,4 +1,8 @@
 .occupation {
   padding-bottom: 94px;
   text-align: center;
+
+  @media screen and (max-width: 1199.99px) {
+    display: none;
+  }
 }

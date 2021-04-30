@@ -1,3 +1,7 @@
 .regular-clients__list {
   display: flex;
+  margin: -15px;
+  @media screen and (max-width: 1199.99px) {
+    flex-wrap: wrap;
+  }
 }

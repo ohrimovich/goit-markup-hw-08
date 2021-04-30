@@ -6,4 +6,9 @@
   margin-right: auto;
 
   text-align: center;
+
+  @media screen and (max-width: 1199.99px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }

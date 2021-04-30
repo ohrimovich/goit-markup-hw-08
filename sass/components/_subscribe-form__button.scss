@@ -16,4 +16,9 @@
   border: none;
   cursor: pointer;
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 1199.98px) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }

@@ -11,4 +11,10 @@
   text-transform: uppercase;
 
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 1199.99px) {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+  }
 }
