@@ -1,0 +1,31 @@
+.occupation__list {
+  display: flex;
+}
+
+.occupation__item {
+  position: relative;
+}
+
+.occupation__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.occupation__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  z-index: 1;
+
+  color: var(--primary-white-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}

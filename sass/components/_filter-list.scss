@@ -1,0 +1,9 @@
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
+}

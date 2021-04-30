@@ -1,0 +1,15 @@
+.subscribe-form__input {
+  width: 358px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 16px;
+  border-color: rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--dark-background-color);
+}
+
+.subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
