@@ -1,5 +1,10 @@
 .form-container {
+  @media screen and (min-width: 767.98px) {
+    margin-top: 60px;
+  }
+
   @media screen and (min-width: 1199.98px) {
     margin-left: 93px;
+    margin-top: 0;
   }
 }

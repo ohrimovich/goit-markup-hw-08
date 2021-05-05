@@ -15,6 +15,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &__icon {
@@ -30,5 +35,14 @@
 
   &__item:not(:last-child) {
     margin-right: 50px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: block;
   }
 }

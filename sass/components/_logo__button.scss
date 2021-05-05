@@ -1,0 +1,32 @@
+.logo__button {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  z-index: 999;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+
+  &:hover .logo__icon,
+  &:focus .logo__icon {
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 767.98px) {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+.icon-cross {
+  display: none;
+}

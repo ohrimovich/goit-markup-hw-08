@@ -2,8 +2,11 @@
 @import "./base/common";
 @import "./components/header";
 @import "./components/logo";
+@import "./components/logo__button";
+@import "./components/logo__icon";
 @import "./components/main-nav";
 @import "./components/contact__list";
+@import "./components/mobile-menu";
 @import "./components/hero__title";
 @import "./components/hero__button";
 @import "./components/modal";
@@ -20,6 +23,7 @@
 @import "./components/regular-clients__list";
 @import "./components/footer__address";
 @import "./components/footer__contact-list";
+@import "./components/join";
 @import "./components/join__title";
 @import "./components/join__link";
 @import "./components/join__list";
@@ -38,6 +42,7 @@
 @import "./components/out-works__thumb";
 @import "./components/our-works__overlay";
 
+@import "./layout/header-content";
 @import "./layout/container";
 @import "./layout/section";
 @import "./layout/hero";
