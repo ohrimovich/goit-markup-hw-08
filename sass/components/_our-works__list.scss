@@ -1,4 +1,7 @@
 .our-works__list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 767.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
