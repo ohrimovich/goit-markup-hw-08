@@ -8,6 +8,10 @@
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .our-works__link {

@@ -32,7 +32,8 @@ h6 {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .list {
@@ -89,8 +90,10 @@ body {
 .logo__button {
   margin-left: auto;
   border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: transparent;
-  z-index: 999;
+  z-index: 998;
 }
 
 .logo__button:hover, .logo__button:focus {
@@ -234,7 +237,7 @@ body {
   height: 100vh;
   padding: 48px 40px;
   background-color: #fff;
-  z-index: 998;
+  z-index: 997;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -374,15 +377,22 @@ body {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   padding: 40px;
+  z-index: 999;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479.98px) {
+  .modal {
+    margin-right: 15px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
@@ -803,7 +813,6 @@ body {
 }
 
 .regular-clients__link {
-  min-width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -923,13 +932,13 @@ body {
 }
 
 .subscribe-form__input {
-  width: 358px;
   padding-bottom: 15px;
   padding-top: 15px;
   padding-left: 16px;
   border-color: rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
   background-color: var(--dark-background-color);
 }
 
@@ -940,6 +949,12 @@ body {
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .subscribe-form__input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
   }
 }
 
@@ -1037,6 +1052,10 @@ body {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
+}
+
+.our-works__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .our-works__link {
@@ -1185,9 +1204,48 @@ body {
 }
 
 .overlay-hero {
-  max-width: 1600px;
-  background-position: top left;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .overlay-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-480.jpg);
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .overlay-hero {
+    background-image: url(/images/hero/hero-480@2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay-hero {
+    max-width: 880px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-768.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay-hero {
+    background-image: url(/images/hero/hero-768@2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay-hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-1200.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay-hero {
+    background-image: url(/images/hero/hero-1200@2.jpg);
+  }
 }
 
 .occupation {
@@ -1281,7 +1339,9 @@ body {
   }
 }
 
-.our-works {
-  padding-top: 94px;
+@media screen and (min-width: 1199.98px) {
+  .our-works {
+    padding-top: 94px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
