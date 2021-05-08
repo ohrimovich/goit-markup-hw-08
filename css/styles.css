@@ -1285,13 +1285,14 @@ body {
 @media screen and (min-width: 767.98px) {
   .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 1199.98px) {
   .footer-content {
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
