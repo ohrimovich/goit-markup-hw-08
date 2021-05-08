@@ -1,8 +1,10 @@
 .footer-content {
-  display: flex;
+  @media screen and (min-width: 767.98px) {
+    display: flex;
+    justify-content: space-between;
+  }
 
   @media screen and (max-width: 1199.98px) {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }

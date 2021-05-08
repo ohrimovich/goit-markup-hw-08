@@ -1,16 +1,18 @@
 .our-works__item {
-  @media screen and (min-width: 767.98px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 1199.98px) {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 

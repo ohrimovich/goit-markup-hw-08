@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -26,7 +25,6 @@
           <svg class="logo__icon" width="40" height="40">
             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             <use class="icon-cross" href="./images/icons.svg#icon-closeM"></use>
-            >
           </svg>
         </button>
         <div class="header-content">
@@ -79,24 +77,35 @@
               <a class="link" href="">Контакты</a>
             </li>
           </ul>
-          <ul class="mobile-menu__contacts list">
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__phone-num link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu__social list">
-            <li class="item"><a class="link" href="">Instagram</a></li>
-            <li class="item"><a class="link" href="">Twitter</a></li>
-            <li class="item"><a class="link" href="">Facebook</a></li>
-            <li class="item"><a class="link" href="">LinkedIn</a></li>
-          </ul>
+          <div>
+            <ul class="mobile-menu__contacts list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__phone-num link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social list">
+              <li class="item">
+                <a class="link" href="">Instagram</a
+                ><span class="mobile-menu__social-line">|</span>
+              </li>
+              <li class="item">
+                <a class="link" href="">Twitter</a
+                ><span class="mobile-menu__social-line">|</span>
+              </li>
+              <li class="item">
+                <a class="link" href="">Facebook</a
+                ><span class="mobile-menu__social-line">|</span>
+              </li>
+              <li class="item"><a class="link" href="">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -305,10 +314,10 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/productdesigner-270.jpg 1x,
-                  ./images/team/productdesigner-540.jpg 2x
+                  ./images/team/ProductDesigner-450.jpg 1x,
+                  ./images/team/ProductDesigner-900.jpg 2x
                 "
-                src="./images/team/productdesigner-270.jpg"
+                src="./images/team/ProductDesigner-450.jpg"
                 alt="Фото дезайнера продукта Игоря Демьяненко"
                 width="270"
               />
@@ -372,10 +381,10 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/frontenddeveloper-270.jpg 1x,
-                  ./images/team/frontenddeveloper-540.jpg 2x
+                  ./images/team/FrontendDeveloper-450.jpg 1x,
+                  ./images/team/FrontendDeveloper-900.jpg 2x
                 "
-                src="./images/team/frontenddeveloper-270.jpg"
+                src="./images/team/FrontendDeveloper-450.jpg"
                 alt="Фото фронтенд разработчика Ольги Репиной"
                 width="270"
               />
@@ -439,10 +448,10 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/marketing-270.jpg 1x,
-                  ./images/team/marketing-540.jpg 2x
+                  ./images/team/Marketing-450.jpg 1x,
+                  ./images/team/Marketing-900.jpg 2x
                 "
-                src="./images/team/marketing-270.jpg"
+                src="./images/team/Marketing-450.jpg"
                 alt="Фото маркетолога Николая Тарасова"
                 width="270"
               />
@@ -507,10 +516,10 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/ui-designer-270.jpg 1x,
-                  ./images/team/ui-designer-540.jpg 2x
+                  ./images/team/UiDesigner-450.jpg 1x,
+                  ./images/team/UiDesigner-900.jpg 2x
                 "
-                src="./images/team/ui-designer-270.jpg"
+                src="./images/team/UiDesigner-900.jpg"
                 alt="Фото Юай дизайнера Михаила Ермакова"
                 width="270"
               />

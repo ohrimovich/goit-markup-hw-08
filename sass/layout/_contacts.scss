@@ -1,16 +1,4 @@
 .contacts {
-  @media screen and (min-width: 450px) {
-    width: 300px;
-  }
-
-  @media screen and (min-width: 767.98px) {
-    margin-right: 165px;
-  }
-
-  @media screen and (min-width: 1199.98px) {
-    margin-right: 70px;
-  }
-
   @media screen and (max-width: 1199.98px) {
     text-align: center;
     .logo--white {
